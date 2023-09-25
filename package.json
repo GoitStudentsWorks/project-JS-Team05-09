@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    
     "dev": "vite",
     "build": "vite build --base=/project-JS-Team05-09/",
     "preview": "vite preview"
