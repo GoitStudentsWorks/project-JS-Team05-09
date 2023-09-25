@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/project-JS-Team05-09/assets/treats-favicon-e7ea82f7.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tastytreats</title>
+  
+  <script type="module" crossorigin src="/project-JS-Team05-09/assets/index-1274c909.js"></script>
+  <link rel="modulepreload" crossorigin href="/project-JS-Team05-09/assets/switchdark-a41409e8.js">
+  <link rel="stylesheet" href="/project-JS-Team05-09/assets/switchdark-372019e0.css">
+  <link rel="stylesheet" href="/project-JS-Team05-09/assets/index-6cd154f5.css">
+</head>
+
+<body>
+  <header id="home" class="header container">
+  <div class="header-logo-container">
+    <!-- Navigation -->
+    <ul class="nav-list list">
+      <li class="nav-item">
+        <a class="nav-link link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link active" href="favorites.html">Favorites</a>
+      </li>
+    </ul>
+
+    <!-- Logo -->
+    <div logo-header-div>
+      <a href="./index.html" class="logo-header link">
+        tasty<span class="logo-header-span">treats.</span>
+      </a>
+    </div>
+    <!-- Icons -->
+    <div class="cart-switch">
+      <button type="button" class="btn-cart-header">
+        <div>
+          <svg class="cart" height="24" width="24">
+            <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-shopping-cart02"></use>
+          </svg>
+        </div>
+      </button>
+      <div class="swith-header">
+        <svg class="icon-switch" height="20" width="46">
+          <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-switch"></use>
+        </svg>
+        <svg class="icon-onswitch is-hidden" height="20" width="46">
+          <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-onswitch"></use>
+        </svg>
+        </svg>
+       <input type="checkbox" class="sw-chbox-heder" name="sheck_switch"  value="">
+      </div>
+    </div>
+
+    <button
+      class="burger-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-modal-open
+    >
+      <svg class="icon-burger" width="32" height="32">
+        <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+  <!-- <section class="heder container"></section> -->
+<section class="hero container-hero">
+  <div class="hero-title-div">
+    <h1 class="hero-title">
+      Learn to Cook
+      <span class="hero-title-tasty">Tasty Treats' </span> Customizable
+      Masterclass
+    </h1>
+    <p class="hero-message">
+      TastyTreats - Customize Your Meal with Ingredient Options and Step-by-Step
+      Video Guides.
+    </p>
+    <button class="btn btn-hero" type="button">Order now</button>
+
+  </div>
+
+  <div class="swiper swiper-hero hero-push-buton">
+    <div class="swiper-wrapper"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+  <div class="container wrapper-all">
+    <section class="categories-popularrec">
+      <div class="categoris-wrapper"> <button class="all-categoris">All categories</button>
+<div class="categoris-list"></div></div>
+
+      <!-- popular recepies -->
+<div class="container-popular-recipes">
+    <h2 class="popular-recipes-title">Popular recipes</h2>
+    <div class="popular-items"></div>
+  </div>
+    </section>
+    <section class="recipes">
+      <h2 class="visually-hidden">Recipes</h2>
+
+      <!-- filters and recepies -->
+<div class="recipes-section">
+  <div class="filter">
+    <form class="filter-form">
+      <label for="search" class="form-label">
+        <p class="filter-txt">Search</p>
+        <input
+          class="search-input"
+          type="text"
+          name="search"
+          placeholder="Enter Text"
+        />
+        <svg class="search-icon" width="18" height="18">
+          <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-search"></use>
+        </svg>
+        <button type="button" class="clean-search">
+          <svg class="clean-search-icon" width="16" height="16" value="">
+            <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-x"></use>
+          </svg>
+        </button>
+      </label>
+      <label for="time" class="form-label select-time">
+        <p class="filter-txt">Time</p>
+        <select name="time" class="custom-select">
+          <option value="">Any</option>
+          <option value="5">5 хв</option>
+          <option value="10">10 хв</option>
+          <option value="15">15 хв</option>
+          <option value="20">20 хв</option>
+          <option value="25">25 хв</option>
+          <option value="30">30 хв</option>
+          <option value="35">35 хв</option>
+          <option value="40">40 хв</option>
+          <option value="45">45 хв</option>
+          <option value="50">50 хв</option>
+          <option value="55">55 хв</option>
+          <option value="60">60 хв</option>
+          <option value="65">65 хв</option>
+          <option value="70">70 хв</option>
+          <option value="75">75 хв</option>
+          <option value="80">80 хв</option>
+          <option value="85">85 хв</option>
+          <option value="90">90 хв</option>
+          <option value="95">95 хв</option>
+          <option value="100">100 хв</option>
+          <option value="105">105 хв</option>
+          <option value="110">110 хв</option>
+          <option value="115">115 хв</option>
+          <option value="120">120 хв</option>
+        </select>
+        <svg class="select-down-icon" width="18" height="18">
+          <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-down"></use>
+        </svg>
+      </label>
+      <label for="area" class="form-label select-area">
+        <p class="filter-txt">Area</p>
+        <select name="area" class="custom-select">
+          <option value="">Any region</option>
+        </select>
+        <svg class="select-down-icon" width="18" height="18">
+          <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-down"></use>
+        </svg>
+      </label>
+      <label for="ingredients" class="form-label select-ingredients">
+        <p class="filter-txt">Ingredients</p>
+        <select name="ingredients" class="custom-select">
+          <option value="">Any</option>
+        </select>
+        <svg class="select-down-icon" width="18" height="18">
+          <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-down"></use>
+        </svg>
+      </label>
+    </form>
+    <div class="reset-filter">
+      <svg class="reset-filter-icon" width="16" height="16">
+        <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-x"></use>
+      </svg>
+      <p class="reset-filter-txt">Reset filter</p>
+    </div>
+  </div>
+
+  <div class="recipes-container">
+    <svg class="visually-hidden" width="14" height="14">
+      <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg" class="href-ico"></use>
+    </svg>
+  </div>
+  <div class="loader-wrapper"><span class="loader"></span></div>
+</div>
+
+
+      <div id="tui-pagination-container" class="tui-pagination"></div>
+    </section>
+  </div>
+  <a href="#home" class="scroll-box">
+    <svg class="scroll-icon" width="32" height="32">
+      <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-arrow"></use>
+    </svg>
+  </a>
+  <!-- modal window recipe -->
+<div class="modal-rec-backdrop is-hidden">
+  <div class="modal-rec-window">
+    <button type="button" class="modal-rec-close">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="js-modal-rec"></div>
+    <button class="modal-rec-btn modal-rec-btn-add">Add to favorite</button>
+    <button class="modal-rec-btn modal-rec-btn-rating">Give a rating</button>
+  </div>
+</div>
+
+  <!-- modal window add rating -->
+<div class="modal-rating-backdrop is-hidden">
+  <div class="modal-rating-window">
+    <button type="button" class="modal-rating-close">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-x"></use>
+      </svg>
+    </button>
+    <form action="submit" class="js-modal-rating-form">
+      <p class="modal-rating-text">Rating</p>
+      <div class="modal-rating-flex">
+        <p class="modal-rating-number">0.0</p>
+        <div class="js-modal-rating-stars" name="radiostars">
+          <label class="star-radio-label">
+            <input class="star-radio" type="radio" name="stars-qnt" value="1" />
+            <svg class="rating-icon-modal" width="24" height="24">
+              <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-Star"></use>
+            </svg>
+          </label>
+          <label class="star-radio-label">
+            <input class="star-radio" type="radio" name="stars-qnt" value="2" />
+            <svg class="rating-icon-modal" width="24" height="24">
+              <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-Star"></use>
+            </svg>
+          </label>
+          <label class="star-radio-label">
+            <input class="star-radio" type="radio" name="stars-qnt" value="3" />
+            <svg class="rating-icon-modal" width="24" height="24">
+              <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-Star"></use>
+            </svg>
+          </label>
+          <label class="star-radio-label">
+            <input class="star-radio" type="radio" name="stars-qnt" value="4" />
+            <svg class="rating-icon-modal" width="24" height="24">
+              <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-Star"></use>
+            </svg>
+          </label>
+          <label class="star-radio-label">
+            <input class="star-radio" type="radio" name="stars-qnt" value="5" />
+            <svg class="rating-icon-modal" width="24" height="24">
+              <use href="/project-JS-Team05-09/assets/recipes-e952d6a9.svg#icon-Star"></use>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="modal-rating-input-flex">
+        <input
+          class="modal-rating-input"
+          type="email"
+          name="input"
+          id="modal-rating-input"
+          placeholder="Enter email"
+        />
+        <button type="submit" class="modal-rec-btn modal-rating-btn-send">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- modbile menu-->
+<!-- modbile menu-->
+<div class="mobile-menu-backdrop is-hidden" data-menu>
+  <div class="mobile-menu-window">
+    <button type="button" class="mob-menu-close" data-menu-close>
+      <svg class="mob-menu-svg" width="32" height="32">
+        <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="js-modal-rec"></div>
+    <!-- Navigation -->
+    <ul class="nav-list-mob-menu list">
+      <li class="nav-item-mob-menu">
+        <a class="nav-link-mob-menu link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link-mob-menu link active" href="favorites.html"
+          >Favorites</a
+        >
+      </li>
+    </ul>
+    <div class="div-switch">
+     <svg class="icon-switch-mob ">
+      <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-switch"></use>
+    </svg>
+     <svg class="icon-onswitch-mob is-hidden">
+      <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-onswitch"></use>
+    </svg>
+       <input type="checkbox" class="sw-chbox" name="sheck_switch"  value="">
+   
+</div>
+    </div>
+  </div>
+</div>
+
+  <div class="backdrop-ordernow is-hidden" data-modal-overnow>
+  <div class="modal-ordernow">
+    <button type="button" class="close-modwin-btn" data-modal-close>
+      <svg class="close-modwin-icon" width="20" height="20">
+        <use href="/project-JS-Team05-09/assets/symbol-defs-dc4eecc5.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <h2 class="mod-title">ORDER NOW</h2>
+    <form action="submit" name="subscribe-orderNow">
+      <label class="name-mod label-ordernow" for="name-mod">Name</label>
+
+      <input
+        class="name-mod-inp mod-inp"
+        type="text"
+        name="name_customers"
+        id="name-mod"
+        required
+        autofocus
+      />
+
+      <label class="tel-mod label-ordernow" for="tel-mod">Phone number</label>
+
+      <input
+        class="tel-mod mod-inp"
+        type="tel"
+        pattern="[\+]38\d{10}"
+        title="Використовуйте формат: +380000000000"
+        name="tel_customers"
+        id="tel-mod"
+        required
+      />
+
+      <label class="email-mod-label label-ordernow" for="email-mod"
+        >Email</label
+      >
+
+      <input
+        class="email-mod mod-inp"
+        type="email"
+        id="email-mod"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        title="Використовуйте формат: test@gmail.com"
+        name="email_customers"
+        required
+      />
+
+      <label class="comment-mod-label label-ordernow" for="comment"
+        >Comment</label
+      >
+      <textarea
+        class="mod-txtar-com mod-inp"
+        name="comment_customers"
+        id="comment"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <button class="btn btn-send btn-modal" type="submit">Send</button>
+
+    </form>
+  </div>
+</div>
+
+  
+</body>
+
+</html>
